@@ -1,3 +1,4 @@
 /home/migrations/
+/timetable/migrations/
 /.idea/
-/db.sqlite3
+*.sqlite3

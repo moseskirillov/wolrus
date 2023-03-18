@@ -1,0 +1,158 @@
+    <!-- Timetable block -->
+    <section class="timetable">
+        <h1 class="timetable-header">Расписание</h1>
+        <div class="timetable-wrp center-block">
+            <ul class="timetable-days center-block">
+                <button class="day-button active" data-id="first-day">
+
+                    <span class="day-button-txt">28</span>
+                    <span data-id="first-day">Декабрь</span>
+                    <span data-id="first-day">Ср</span>
+
+                </button>
+                <button class="day-button" data-id="second-day">
+
+                    <span>29</span>
+                    <span>Декабрь</span>
+                    <span>Чт</span>
+
+                </button>
+                <button class="day-button" data-id="third-day">
+
+                    <span>31</span>
+                    <span>Декабрь</span>
+                    <span>Сб</span>
+
+                </button>
+                <button class="day-button" data-id="fourth-day">
+
+                    <span>1</span>
+                    <span>Январь</span>
+                    <span>Вс</span>
+
+                </button>
+                <button class="day-button" data-id="fifth-day">
+
+                    <span>3</span>
+                    <span>Январь</span>
+                    <span>Вт</span>
+
+                </button>
+                <button class="day-button" data-id="sixth-day">
+
+                    <span>4</span>
+                    <span>Январь</span>
+                    <span>Ср</span>
+
+                </button>
+                <button class="day-button" data-id="seventh-day">
+
+                    <span>5</span>
+                    <span>Январь</span>
+                    <span>Чт</span>
+
+                </button>
+            </ul>
+            <!--  -->
+            <div class="schedule-list center-block">
+                <!-- Скролл с расписанием -->
+                <div class="schedule-scroll">
+                    <!-- Стрелка прокрутки вверх -->
+                    <svg class="schedule-scroll-up" width="48" height="20" viewBox="0 0 48 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 18L23.4118 2.42776C23.7625 2.17274 24.2375 2.17274 24.5882 2.42776L46 18"
+                            stroke="#222222" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+
+                    <!-- События с временем -->
+                    <div class="schedule-items active" id="first-day">
+                        <div class="schedule-item">
+                            <span class="schedule-time">10:00</span>
+                            <p class="schedule-desc">Богослужение / южный филиал (Второе здание)</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">13:00</span>
+                            <p class="schedule-desc">Богослужение | Кирилл Семилетов</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">13:00</span>
+                            <p class="schedule-desc">Богослужение на английском языке (Второе здание)</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">14:00</span>
+                            <p class="schedule-desc">Богослужение на испанском языке (Второе здание)</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">15:30</span>
+                            <p class="schedule-desc">Семинары «Путь роста: первый, второй, третий шаги»</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">16:30</span>
+                            <p class="schedule-desc">Узбекское богослужение (Второе здание)</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-items" id="second-day">
+                        <div class="schedule-item">
+                            <span class="schedule-time">10:00</span>
+                            <p class="schedule-desc">Богослужение</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">13:00</span>
+                            <p class="schedule-desc">Богослужение | Кирилл Семилетов</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">13:00</span>
+                            <p class="schedule-desc">Богослужение на английском языке </p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">14:00</span>
+                            <p class="schedule-desc">Богослужение на испанском языке (Второе здание)</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-items" id="third-day">
+                        <div class="schedule-item">
+                            <span class="schedule-time">11:00</span>
+                            <p class="schedule-desc">Богослужение</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">13:00</span>
+                            <p class="schedule-desc">Богослужение | Кирилл Семилетов</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">13:00</span>
+                            <p class="schedule-desc">Богослужение на английском языке </p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">14:00</span>
+                            <p class="schedule-desc">Богослужение на испанском языке (Второе здание)</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">16:00</span>
+                            <p class="schedule-desc">Богослужение на испанском языке (Второе здание)</p>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-time">18:00</span>
+                            <p class="schedule-desc">Богослужение на испанском языке (Второе здание)</p>
+                        </div>
+                    </div>
+
+                    <!-- Стрелка прокрутки вниз -->
+                    <svg class="schedule-scroll-down" width="48" height="20" viewBox="0 0 48 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46 2L24.5882 17.5722C24.2375 17.8273 23.7625 17.8273 23.4118 17.5722L2 2"
+                            stroke="#222222" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <button class="schedule-btn">
+                <span class="schedule-btn-item">Календарь</span>
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.01758 7.8894L2.12828 2.00011" stroke="white" stroke-width="3" stroke-linecap="round" />
+                    <path d="M7.87976 8.05679L2.04477 13.9999" stroke="white" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </section>

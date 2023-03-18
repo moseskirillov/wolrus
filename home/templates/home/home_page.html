@@ -1,21 +1,43 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block body_class %}template-homepage{% endblock %}
 
 {% block extra_css %}
-
-{% comment %}
+    {% comment %}
 Delete the line below if you're just getting started and want to remove the welcome screen!
 {% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timetable.css' %}">
 {% endblock extra_css %}
 
 {% block content %}
 
-{% comment %}
+    {% include 'home/timetable.html' %}
+
+    <p>Home page123</p>
+
+    {% for date in dates %}
+        <h2>{{ date.date|date:"d E" }}</h2>
+        <p>{{ date.date|date:"D" }}</p>
+        {% if date.events %}
+            <ul>
+                {% for event in date.events %}
+                    <li>{{ event.start_date|date:"H:i" }}{{ event.title }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Нет событий на эту дату</p>
+        {% endif %}
+    {% endfor %}
+
+    {% comment %}
 Delete the line below if you're just getting started and want to remove the welcome screen!
 {% endcomment %}
-{% include 'home/welcome_page.html' %}
+    {#{% include 'timetable/welcome_page.html' %}#}
 
+
+    <footer>
+        <script src="{% static 'js/timetable.js' %}"></script>
+    </footer>
 {% endblock content %}
